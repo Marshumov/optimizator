@@ -13,7 +13,7 @@ module.exports = function myTransformation(options) {
 
   return through.obj(function (file, enc, cb) {
 //return through({ objectMode: true, encoding: 'utf8' },(file, enc, cb) => {
-    if (file.isNull()) {
+    if (file.isNull()) { 
       // return as is
       cb(null, file);
 

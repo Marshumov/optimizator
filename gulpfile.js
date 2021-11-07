@@ -77,7 +77,7 @@ function imgAfiv(){
 					.pipe(gulpAvif())
 					.pipe(gulp.dest('./build/img'))
 }
-function imgWebp(){
+function imgWebp(){ 
 	return gulp.src('./src/img/**/*')
 					.pipe(rename(function (path) {
 				//	path.basename = path.basename.replace(' ', '').replace('-', '').replace('_', '');
