@@ -27,22 +27,7 @@ imgCompress  = require('imagemin-jpeg-recompress');
 const debug = require ( 'gulp-debug') ;
 var cache = require('gulp-cache');
 const gulpAvif = require('gulp-avif');
-/*
-	1. browserSync для html
-	2.
-		gulp-uncss - удаление неиспользуемого css
-		gulp-group-css-media-queries - соединение media-запрос
-	3. по желанию pug html препроц
-*/
 
-/*
-let cssFiles = [
-	'./node_modules/normalize.css/normalize.css',
-	'./src/css/base.css',
-	'./src/css/grid.css',
-	'./src/css/humans.css'
-];
-*/
 
 function clear(){
 	return del('build/*');
